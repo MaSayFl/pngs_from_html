@@ -184,8 +184,7 @@ def plot_CorrFM(df1, df2):
 def plot_Val(df, ax, value):
     mask = df.index.str.startswith(value, na=False)
     col = df.columns
-    sns.stripplot(data=df[mask][col], ax = ax,
-               marker='x', s=15, linewidth=2, color='red', jitter=0)
+    sns.stripplot(data=df[mask][col], ax = ax, s=15, linewidth=2, edgecolor="firebrick", marker = 'x', jitter=0)
 
 def save_multi_image(filename):
     pp = PdfPages(filename)
