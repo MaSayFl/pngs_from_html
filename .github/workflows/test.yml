@@ -28,4 +28,4 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           push: true
-          tags: flexxoble/$DOCKER_IMAGE_NAME:latest
+          tags: flexxoble/${{ env.DOCKER_IMAGE_NAME }}:latest
