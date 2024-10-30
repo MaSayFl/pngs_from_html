@@ -9,7 +9,6 @@ on:
 
 env:
   DOCKER_IMAGE_NAME: check1
-  DOCKER_REGISTRY_URL: myregistry.domain.com
 
 jobs:
   docker:
@@ -28,4 +27,4 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           push: true
-          tags: flexxoble/${{ env.DOCKER_IMAGE_NAME }}:latest
+          tags: docker.io/flexxoble/${{ env.DOCKER_IMAGE_NAME }}:latest
